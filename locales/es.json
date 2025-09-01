@@ -1,0 +1,37 @@
+{
+  "hero": {
+    "title": "¡Hola! Soy Emerson Galvez",
+    "subtitle": "Data Engineer apasionado por transformar datos en decisiones estratégicas."
+  },
+  "about": {
+    "text": "Ingeniero Comercial de la Universidad de Concepción y Diplomado en Data Science de la Pontificia Universidad Católica. Con más de 4 años diseñando pipelines en Azure, Python y Power BI para grandes empresas como BHP, ENEL y Security Bank. Especializado en la construcción de soluciones de datos escalables y automatizadas que impulsan la toma de decisiones basada en datos."
+  },
+  "experience": [
+    {
+      "role": "Data Engineer Senior Analyst",
+      "company": "Accenture",
+      "period": "Jul 2022 – Presente",
+      "bullets": [
+        "Diseñé e implementé un framework paramétrico en Azure Data Factory para transferencias completas/incrementales entre más de 20 tablas.",
+        "Automaticé reportes regulatorios para ENEL (SEC), reduciendo el tiempo de entrega de 3 días a 30 minutos.",
+        "Soporte continuo para modelos analíticos en sitios de BHP (Los Colorados, Spence, Escondida) con actualizaciones semanales y re-entrenamiento de modelos predictivos."
+      ]
+    },
+    {
+      "role": "Big Data Engineer",
+      "company": "Asociación Chilena de Seguridad (ACHS)",
+      "period": "Nov 2021 – Jun 2022",
+      "bullets": [
+        "Migración de ETL on-premise a Azure: 15 pipelines documentados y versionados.",
+        "PoC de ingestas Postman/REST a Data Lake Gen2."
+      ]
+    }
+  ],
+  "skills": [
+    {"name": "Python", "icon": "🐍"},
+    {"name": "Azure", "icon": "☁️"},
+    {"name": "Power BI", "icon": "📊"},
+    {"name": "SQL", "icon": "🗃️"},
+    {"name": "FastAPI", "icon": "⚡"}
+  ]
+}

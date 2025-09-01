@@ -1,0 +1,56 @@
+<section class="min-h-screen flex items-center justify-center relative overflow-hidden">
+  <!-- Fondo con gradiente animado -->
+  <div class="absolute inset-0 bg-gradient-to-br from-blue-900 via-purple-900 to-indigo-900 opacity-50"></div>
+  
+  <!-- Elementos decorativos de fondo -->
+  <div class="absolute top-20 left-20 w-72 h-72 bg-purple-500 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-pulse-slow"></div>
+  <div class="absolute top-40 right-20 w-72 h-72 bg-yellow-500 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-pulse-slow" style="animation-delay: 1s;"></div>
+  <div class="absolute -bottom-8 left-20 w-72 h-72 bg-pink-500 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-pulse-slow" style="animation-delay: 2s;"></div>
+  
+  <!-- Contenido principal -->
+  <div class="relative z-10 text-center px-6 max-w-4xl mx-auto">
+    <!-- Imagen de perfil -->
+    <div class="mb-8 animate-fade-in-up">
+      <div class="relative inline-block">
+        <img src="/static/img/perfil.png" 
+             alt="Emerson Galvez" 
+             class="profile-image w-40 h-40 rounded-full object-cover animate-float"
+             onerror="this.onerror=null; this.src='https://via.placeholder.com/160x160/667eea/ffffff?text=EG'; console.log('Error loading image');"
+             onload="console.log('Image loaded successfully');">
+        <!-- Anillo decorativo -->
+        <div class="absolute inset-0 rounded-full border-4 border-transparent bg-gradient-to-r from-purple-400 to-pink-400 animate-spin" style="animation-duration: 3s;"></div>
+      </div>
+    </div>
+    
+    <!-- Título principal -->
+    <h1 class="text-5xl md:text-7xl font-bold mb-6 animate-fade-in-up" style="animation-delay: 0.2s;">
+      <span class="bg-gradient-to-r from-white to-purple-200 bg-clip-text text-transparent">
+        {{ data.hero.title }}
+      </span>
+    </h1>
+    
+    <!-- Subtítulo -->
+    <p class="text-xl md:text-2xl text-gray-300 mb-8 animate-fade-in-up max-w-2xl mx-auto leading-relaxed" style="animation-delay: 0.4s;">
+      {{ data.hero.subtitle }}
+    </p>
+    
+    <!-- Botones de acción -->
+    <div class="flex flex-col sm:flex-row gap-4 justify-center items-center animate-fade-in-up" style="animation-delay: 0.6s;">
+      <a href="#about" 
+         class="glass px-8 py-4 rounded-full font-semibold hover-lift transition-all duration-300 bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600">
+        Conoce más sobre mí
+      </a>
+      <a href="#experience" 
+         class="glass px-8 py-4 rounded-full font-semibold hover-lift transition-all duration-300 border border-white/20 hover:bg-white/10">
+        Ver experiencia
+      </a>
+    </div>
+    
+    <!-- Indicador de scroll -->
+    <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+      <div class="w-6 h-10 border-2 border-white/30 rounded-full flex justify-center">
+        <div class="w-1 h-3 bg-white/60 rounded-full mt-2 animate-pulse"></div>
+      </div>
+    </div>
+  </div>
+</section>
