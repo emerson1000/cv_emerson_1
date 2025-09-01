@@ -1,10 +1,41 @@
 {
+  "nav": {
+    "about": "Sobre mí",
+    "experience": "Experiencia",
+    "skills": "Habilidades",
+    "contact": "Contacto"
+  },
   "hero": {
     "title": "¡Hola! Soy Emerson Galvez",
-    "subtitle": "Data Engineer apasionado por transformar datos en decisiones estratégicas."
+    "subtitle": "Data Engineer apasionado por transformar datos en decisiones estratégicas.",
+    "aboutButton": "Conoce más sobre mí",
+    "experienceButton": "Ver experiencia"
+  },
+  "sections": {
+    "about": "Sobre mí",
+    "experience": "Experiencia Profesional",
+    "skills": "Habilidades & Tecnologías"
   },
   "about": {
-    "text": "Ingeniero Comercial de la Universidad de Concepción y Diplomado en Data Science de la Pontificia Universidad Católica. Con más de 4 años diseñando pipelines en Azure, Python y Power BI para grandes empresas como BHP, ENEL y Security Bank. Especializado en la construcción de soluciones de datos escalables y automatizadas que impulsan la toma de decisiones basada en datos."
+    "text": "Ingeniero Comercial de la Universidad de Concepción y Diplomado en Data Science de la Pontificia Universidad Católica. Con más de 4 años diseñando pipelines en Azure, Python y Power BI para grandes empresas como BHP, ENEL y Security Bank. Especializado en la construcción de soluciones de datos escalables y automatizadas que impulsan la toma de decisiones basada en datos.",
+    "stats": {
+      "years": "Años de experiencia",
+      "projects": "Proyectos completados"
+    },
+    "education": {
+      "title": "Educación",
+      "degree": "Ingeniero Comercial",
+      "university": "Universidad de Concepción",
+      "diploma": "Diploma en Data Science",
+      "puc": "Pontificia Universidad Católica"
+    },
+    "specialization": {
+      "title": "Especialización",
+      "dataEngineering": "Data Engineering",
+      "technologies": "Azure Data Factory, Python, Power BI",
+      "companies": "Empresas",
+      "companyList": "BHP, ENEL, Security Bank"
+    }
   },
   "experience": [
     {
@@ -27,11 +58,49 @@
       ]
     }
   ],
+  "cta": {
+    "title": "¿Interesado en trabajar juntos?",
+    "description": "Estoy siempre abierto a nuevas oportunidades y proyectos desafiantes.",
+    "button": "Contáctame"
+  },
   "skills": [
     {"name": "Python", "icon": "🐍"},
     {"name": "Azure", "icon": "☁️"},
     {"name": "Power BI", "icon": "📊"},
     {"name": "SQL", "icon": "🗃️"},
     {"name": "FastAPI", "icon": "⚡"}
-  ]
+  ],
+  "skillsSection": {
+    "title": "Nivel de Experiencia"
+  },
+  "contact": {
+    "title": "Contacto",
+    "letsTalk": {
+      "title": "¡Hablemos!",
+      "description": "Estoy siempre interesado en nuevas oportunidades y proyectos desafiantes. Si tienes una propuesta o simplemente quieres conectar, no dudes en contactarme."
+    },
+    "form": {
+      "title": "Envíame un mensaje",
+      "name": "Nombre",
+      "namePlaceholder": "Tu nombre",
+      "email": "Email",
+      "emailPlaceholder": "tu@email.com",
+      "subject": "Asunto",
+      "subjectPlaceholder": "¿En qué puedo ayudarte?",
+      "message": "Mensaje",
+      "messagePlaceholder": "Cuéntame sobre tu proyecto...",
+      "submit": "Enviar mensaje"
+    },
+    "info": {
+      "email": "Email",
+      "location": "Ubicación",
+      "locationValue": "Santiago, Chile",
+      "availability": "Disponibilidad",
+      "availabilityValue": "Abierto a nuevas oportunidades"
+    }
+  },
+  "footer": {
+    "connect": "Conecta conmigo",
+    "copyright": "© 2024 Emerson Galvez. Todos los derechos reservados."
+  }
 }

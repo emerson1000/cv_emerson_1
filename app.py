@@ -17,4 +17,4 @@ for lang in ("en", "es"):
 @app.get("/")
 def home(request: Request, lang: str = "es"):
     data = locales.get(lang, locales["es"])
-    return templates.TemplateResponse("index.html", {"request": request, "data": data})
+    return templates.TemplateResponse("index.html", {"request": request, "data": data, "lang": lang})

@@ -1,10 +1,41 @@
 {
+  "nav": {
+    "about": "About me",
+    "experience": "Experience",
+    "skills": "Skills",
+    "contact": "Contact"
+  },
   "hero": {
     "title": "Hello! I'm Emerson Galvez",
-    "subtitle": "Data Engineer passionate about turning data into decisions."
+    "subtitle": "Data Engineer passionate about turning data into decisions.",
+    "aboutButton": "Learn more about me",
+    "experienceButton": "View experience"
+  },
+  "sections": {
+    "about": "About me",
+    "experience": "Professional Experience",
+    "skills": "Skills & Technologies"
   },
   "about": {
-    "text": "Commercial Engineer (U. de Concepción) and Diploma in Data Science (PUC). More than 4 years designing pipelines in Azure, Python, and Power BI for large companies like BHP, ENEL, and Security Bank."
+    "text": "Commercial Engineer (U. de Concepción) and Diploma in Data Science (PUC). More than 4 years designing pipelines in Azure, Python, and Power BI for large companies like BHP, ENEL, and Security Bank.",
+    "stats": {
+      "years": "Years of experience",
+      "projects": "Completed projects"
+    },
+    "education": {
+      "title": "Education",
+      "degree": "Commercial Engineer",
+      "university": "University of Concepción",
+      "diploma": "Data Science Diploma",
+      "puc": "Pontifical Catholic University"
+    },
+    "specialization": {
+      "title": "Specialization",
+      "dataEngineering": "Data Engineering",
+      "technologies": "Azure Data Factory, Python, Power BI",
+      "companies": "Companies",
+      "companyList": "BHP, ENEL, Security Bank"
+    }
   },
   "experience": [
     {
@@ -27,11 +58,49 @@
       ]
     }
   ],
+  "cta": {
+    "title": "Interested in working together?",
+    "description": "I'm always open to new opportunities and challenging projects.",
+    "button": "Contact me"
+  },
   "skills": [
     {"name": "Python", "icon": "🐍"},
     {"name": "Azure", "icon": "☁️"},
     {"name": "Power BI", "icon": "📊"},
     {"name": "SQL", "icon": "🗃️"},
     {"name": "FastAPI", "icon": "⚡"}
-  ]
+  ],
+  "skillsSection": {
+    "title": "Experience Level"
+  },
+  "contact": {
+    "title": "Contact",
+    "letsTalk": {
+      "title": "Let's talk!",
+      "description": "I'm always interested in new opportunities and challenging projects. If you have a proposal or simply want to connect, don't hesitate to contact me."
+    },
+    "form": {
+      "title": "Send me a message",
+      "name": "Name",
+      "namePlaceholder": "Your name",
+      "email": "Email",
+      "emailPlaceholder": "your@email.com",
+      "subject": "Subject",
+      "subjectPlaceholder": "How can I help you?",
+      "message": "Message",
+      "messagePlaceholder": "Tell me about your project...",
+      "submit": "Send message"
+    },
+    "info": {
+      "email": "Email",
+      "location": "Location",
+      "locationValue": "Santiago, Chile",
+      "availability": "Availability",
+      "availabilityValue": "Open to new opportunities"
+    }
+  },
+  "footer": {
+    "connect": "Connect with me",
+    "copyright": "© 2024 Emerson Galvez. All rights reserved."
+  }
 }

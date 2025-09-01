@@ -4,7 +4,7 @@
     <div class="text-center mb-16 animate-fade-in-up">
       <h2 class="text-4xl md:text-5xl font-bold mb-4">
         <span class="bg-gradient-to-r from-white to-purple-200 bg-clip-text text-transparent">
-          Habilidades & Tecnologías
+          {{ data.sections.skills }}
         </span>
       </h2>
       <div class="w-24 h-1 bg-gradient-to-r from-purple-500 to-pink-500 mx-auto rounded-full"></div>
@@ -94,7 +94,7 @@
     <!-- Nivel de experiencia -->
     <div class="animate-fade-in-up" style="animation-delay: 0.8s;">
       <div class="glass p-8 rounded-2xl">
-        <h3 class="text-2xl font-bold text-center mb-8">Nivel de Experiencia</h3>
+        <h3 class="text-2xl font-bold text-center mb-8">{{ data.skillsSection.title }}</h3>
         <div class="grid md:grid-cols-2 gap-8">
           <!-- Barras de progreso -->
           <div class="space-y-6">

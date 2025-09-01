@@ -4,7 +4,7 @@
     <div class="text-center mb-16 animate-fade-in-up">
       <h2 class="text-4xl md:text-5xl font-bold mb-4">
         <span class="bg-gradient-to-r from-white to-purple-200 bg-clip-text text-transparent">
-          Contacto
+          {{ data.contact.title }}
         </span>
       </h2>
       <div class="w-24 h-1 bg-gradient-to-r from-purple-500 to-pink-500 mx-auto rounded-full"></div>
@@ -15,10 +15,9 @@
       <!-- Información de contacto -->
       <div class="animate-fade-in-up" style="animation-delay: 0.2s;">
         <div class="glass p-8 rounded-2xl">
-          <h3 class="text-2xl font-bold mb-6">¡Hablemos!</h3>
+          <h3 class="text-2xl font-bold mb-6">{{ data.contact.letsTalk.title }}</h3>
           <p class="text-gray-300 mb-8 leading-relaxed">
-            Estoy siempre interesado en nuevas oportunidades y proyectos desafiantes. 
-            Si tienes una propuesta o simplemente quieres conectar, no dudes en contactarme.
+            {{ data.contact.letsTalk.description }}
           </p>
           
           <!-- Información de contacto -->
@@ -30,7 +29,7 @@
                 </svg>
               </div>
               <div>
-                <p class="font-medium">Email</p>
+                <p class="font-medium">{{ data.contact.info.email }}</p>
                 <p class="text-gray-400">emerson.galvez@example.com</p>
               </div>
             </div>
@@ -43,8 +42,8 @@
                 </svg>
               </div>
               <div>
-                <p class="font-medium">Ubicación</p>
-                <p class="text-gray-400">Santiago, Chile</p>
+                <p class="font-medium">{{ data.contact.info.location }}</p>
+                <p class="text-gray-400">{{ data.contact.info.locationValue }}</p>
               </div>
             </div>
             
@@ -55,8 +54,8 @@
                 </svg>
               </div>
               <div>
-                <p class="font-medium">Disponibilidad</p>
-                <p class="text-gray-400">Abierto a nuevas oportunidades</p>
+                <p class="font-medium">{{ data.contact.info.availability }}</p>
+                <p class="text-gray-400">{{ data.contact.info.availabilityValue }}</p>
               </div>
             </div>
           </div>
@@ -66,41 +65,41 @@
       <!-- Formulario de contacto -->
       <div class="animate-fade-in-up" style="animation-delay: 0.4s;">
         <div class="glass p-8 rounded-2xl">
-          <h3 class="text-2xl font-bold mb-6">Envíame un mensaje</h3>
+          <h3 class="text-2xl font-bold mb-6">{{ data.contact.form.title }}</h3>
           
           <form class="space-y-6">
             <div class="grid md:grid-cols-2 gap-6">
               <div>
-                <label class="block text-sm font-medium mb-2">Nombre</label>
+                <label class="block text-sm font-medium mb-2">{{ data.contact.form.name }}</label>
                 <input type="text" 
                        class="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all duration-300"
-                       placeholder="Tu nombre">
+                       placeholder="{{ data.contact.form.namePlaceholder }}">
               </div>
               <div>
-                <label class="block text-sm font-medium mb-2">Email</label>
+                <label class="block text-sm font-medium mb-2">{{ data.contact.form.email }}</label>
                 <input type="email" 
                        class="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all duration-300"
-                       placeholder="tu@email.com">
+                       placeholder="{{ data.contact.form.emailPlaceholder }}">
               </div>
             </div>
             
             <div>
-              <label class="block text-sm font-medium mb-2">Asunto</label>
+              <label class="block text-sm font-medium mb-2">{{ data.contact.form.subject }}</label>
               <input type="text" 
                      class="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all duration-300"
-                     placeholder="¿En qué puedo ayudarte?">
+                     placeholder="{{ data.contact.form.subjectPlaceholder }}">
             </div>
             
             <div>
-              <label class="block text-sm font-medium mb-2">Mensaje</label>
+              <label class="block text-sm font-medium mb-2">{{ data.contact.form.message }}</label>
               <textarea rows="4" 
                         class="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all duration-300 resize-none"
-                        placeholder="Cuéntame sobre tu proyecto..."></textarea>
+                        placeholder="{{ data.contact.form.messagePlaceholder }}"></textarea>
             </div>
             
             <button type="submit" 
                     class="w-full px-8 py-4 bg-gradient-to-r from-purple-500 to-pink-500 rounded-lg font-semibold hover-lift transition-all duration-300">
-              Enviar mensaje
+              {{ data.contact.form.submit }}
             </button>
           </form>
         </div>
@@ -110,7 +109,7 @@
     <!-- Redes sociales -->
     <div class="text-center mt-16 animate-fade-in-up" style="animation-delay: 0.6s;">
       <div class="glass p-8 rounded-2xl max-w-2xl mx-auto">
-        <h3 class="text-xl font-bold mb-6">Conecta conmigo</h3>
+        <h3 class="text-xl font-bold mb-6">{{ data.footer.connect }}</h3>
         <div class="flex justify-center space-x-6">
           <a href="#" class="w-12 h-12 bg-gradient-to-r from-blue-500 to-purple-500 rounded-lg flex items-center justify-center hover-lift transition-all duration-300">
             <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
@@ -134,7 +133,7 @@
     <!-- Copyright -->
     <div class="text-center mt-12 pt-8 border-t border-white/10">
       <p class="text-gray-400">
-        © 2024 Emerson Galvez. Todos los derechos reservados.
+        {{ data.footer.copyright }}
       </p>
     </div>
   </div>
